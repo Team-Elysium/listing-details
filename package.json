@@ -1,0 +1,31 @@
+{
+  "name": "listing-details",
+  "version": "1.0.0",
+  "description": "Listing details sidebar on Streeteasy item page",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Elysium/listing-details.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Elysium/listing-details/issues"
+  },
+  "homepage": "https://github.com/Team-Elysium/listing-details#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "webpack": "^4.27.1"
+  }
+}
