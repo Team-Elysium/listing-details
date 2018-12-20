@@ -2,22 +2,6 @@ const {Listing} = require('./models/ListingSchema');
 const faker = require('faker');
 const mongoose = require('mongoose');
 
-let listingSchema = mongoose.Schema({
-    id: Number,
-    squareFootage: Number,
-    pricePerSquareFoot: Number,
-    rooms: Number,
-    beds: Number,
-    baths: Number,
-    houseType: String,
-    neighborhood: String,
-    streetAddress: String,
-    stars: Number,
-    realty: String,
-    shortRealty: String,
-    realtor: String
-  });
-
 class FakerDataGenerator {
   constructor() {
     this.data = [];
