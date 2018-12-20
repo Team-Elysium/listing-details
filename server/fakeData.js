@@ -1,4 +1,4 @@
-[ {
+var myData = [ {
     "id": 1,
     "squareFootage": 529,
     "pricePerSquareFoot": 1277,
@@ -10,7 +10,7 @@
     "streetAddress": "9 Cottonwood Crossing",
     "stars": 30,
     "realty": "Quigley, Cole and Oberbrunner",
-    "shortRealtor": null, 
+    "shortRealtor": 'placeholder', 
     "realtor": "Baldwin Delafont"
   }, {
     "id": 2,
@@ -24,7 +24,7 @@
     "streetAddress": "48 Petterle Park",
     "stars": 26,
     "realty": "Gottlieb-Bruen",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Bartie Bryant"
   }, {
     "id": 3,
@@ -38,7 +38,7 @@
     "streetAddress": "4504 South Street",
     "stars": 34,
     "realty": "Boyle-Waters",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Dirk Bramsom"
   }, {
     "id": 4,
@@ -52,7 +52,7 @@
     "streetAddress": "37 Tony Pass",
     "stars": 50,
     "realty": "Gottlieb-Corkery",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Joice Wolters"
   }, {
     "id": 5,
@@ -66,7 +66,7 @@
     "streetAddress": "5 Hazelcrest Alley",
     "stars": 33,
     "realty": "Lind LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Mehetabel Andriss"
   }, {
     "id": 6,
@@ -80,7 +80,7 @@
     "streetAddress": "2248 Merrick Terrace",
     "stars": 36,
     "realty": "Rippin-Grady",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Auberta Le Grove"
   }, {
     "id": 7,
@@ -94,7 +94,7 @@
     "streetAddress": "52 Sage Alley",
     "stars": 38,
     "realty": "Tillman-Schneider",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Rinaldo Trappe"
   }, {
     "id": 8,
@@ -108,7 +108,7 @@
     "streetAddress": "081 Johnson Street",
     "stars": 24,
     "realty": "Rosenbaum, Grimes and Powlowski",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Ardene Phizackarley"
   }, {
     "id": 9,
@@ -122,7 +122,7 @@
     "streetAddress": "74 Dwight Center",
     "stars": 36,
     "realty": "Weber-Stokes",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Scarlett Sainz"
   }, {
     "id": 10,
@@ -136,7 +136,7 @@
     "streetAddress": "87198 Duke Crossing",
     "stars": 12,
     "realty": "Harvey LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Kalle Olenchenko"
   }, {
     "id": 11,
@@ -150,7 +150,7 @@
     "streetAddress": "9818 Forest Run Pass",
     "stars": 26,
     "realty": "Robel-Kulas",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Minna Tolle"
   }, {
     "id": 12,
@@ -164,7 +164,7 @@
     "streetAddress": "9035 Jenna Park",
     "stars": 15,
     "realty": "Flatley Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Tilly Belvard"
   }, {
     "id": 13,
@@ -178,7 +178,7 @@
     "streetAddress": "82528 Magdeline Circle",
     "stars": 40,
     "realty": "Bode Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Ward Spawell"
   }, {
     "id": 14,
@@ -192,7 +192,7 @@
     "streetAddress": "476 Hovde Alley",
     "stars": 18,
     "realty": "Kunze, Nienow and Kilback",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Chelsey McKern"
   }, {
     "id": 15,
@@ -206,7 +206,7 @@
     "streetAddress": "850 Clarendon Circle",
     "stars": 35,
     "realty": "Homenick LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Maddy Maxted"
   }, {
     "id": 16,
@@ -220,7 +220,7 @@
     "streetAddress": "68955 Troy Pass",
     "stars": 44,
     "realty": "Boyle Group",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Sandra Glazer"
   }, {
     "id": 17,
@@ -234,7 +234,7 @@
     "streetAddress": "902 Sundown Drive",
     "stars": 43,
     "realty": "Mosciski, Reinger and Lowe",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Lacey Witham"
   }, {
     "id": 18,
@@ -248,7 +248,7 @@
     "streetAddress": "9 South Circle",
     "stars": 4,
     "realty": "Koepp Group",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Bibbye Foley"
   }, {
     "id": 19,
@@ -262,7 +262,7 @@
     "streetAddress": "084 Bartelt Court",
     "stars": 21,
     "realty": "Mraz LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Carrissa Hrinishin"
   }, {
     "id": 20,
@@ -276,7 +276,7 @@
     "streetAddress": "15948 Drewry Way",
     "stars": 13,
     "realty": "Waelchi-Bailey",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Jeremias Brunke"
   }, {
     "id": 21,
@@ -290,7 +290,7 @@
     "streetAddress": "3 Continental Crossing",
     "stars": 15,
     "realty": "White, Pfeffer and Bartoletti",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Dorothee Izkovitch"
   }, {
     "id": 22,
@@ -304,7 +304,7 @@
     "streetAddress": "89 Hovde Circle",
     "stars": 28,
     "realty": "Paucek, Conroy and Lindgren",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Cristabel Wittman"
   }, {
     "id": 23,
@@ -318,7 +318,7 @@
     "streetAddress": "52047 Lotheville Point",
     "stars": 16,
     "realty": "Koch-Carroll",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Teena Keeble"
   }, {
     "id": 24,
@@ -332,7 +332,7 @@
     "streetAddress": "16639 Macpherson Circle",
     "stars": 25,
     "realty": "Goldner Group",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Harriott Philipsson"
   }, {
     "id": 25,
@@ -346,7 +346,7 @@
     "streetAddress": "93700 Northfield Parkway",
     "stars": 6,
     "realty": "Friesen LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Dallas O'Curneen"
   }, {
     "id": 26,
@@ -360,7 +360,7 @@
     "streetAddress": "59 Homewood Terrace",
     "stars": 15,
     "realty": "Kautzer Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Jordan Bailess"
   }, {
     "id": 27,
@@ -374,7 +374,7 @@
     "streetAddress": "7 Quincy Lane",
     "stars": 11,
     "realty": "Boyle, Ziemann and Bernier",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Trenna McCloughlin"
   }, {
     "id": 28,
@@ -388,7 +388,7 @@
     "streetAddress": "7486 Main Park",
     "stars": 33,
     "realty": "Ullrich-Sawayn",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Mikey Fricker"
   }, {
     "id": 29,
@@ -402,7 +402,7 @@
     "streetAddress": "05 Sugar Point",
     "stars": 47,
     "realty": "Bashirian, Bruen and Wilkinson",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Mariya Phelipeaux"
   }, {
     "id": 30,
@@ -416,7 +416,7 @@
     "streetAddress": "6597 Maple Court",
     "stars": 36,
     "realty": "Rosenbaum, Windler and Glover",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Arnie Dallinder"
   }, {
     "id": 31,
@@ -430,7 +430,7 @@
     "streetAddress": "8 Bunting Junction",
     "stars": 47,
     "realty": "Luettgen, Ritchie and Bins",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Paxton Wilkison"
   }, {
     "id": 32,
@@ -444,7 +444,7 @@
     "streetAddress": "2 Daystar Court",
     "stars": 28,
     "realty": "Corwin Group",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Trudey Peres"
   }, {
     "id": 33,
@@ -458,7 +458,7 @@
     "streetAddress": "7235 Forster Junction",
     "stars": 20,
     "realty": "Wisoky-Gottlieb",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Louella Sherborne"
   }, {
     "id": 34,
@@ -472,7 +472,7 @@
     "streetAddress": "3 Veith Plaza",
     "stars": 1,
     "realty": "Kovacek LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Maggee Langshaw"
   }, {
     "id": 35,
@@ -486,7 +486,7 @@
     "streetAddress": "0309 Dovetail Avenue",
     "stars": 49,
     "realty": "Harber LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Shannen Gueinn"
   }, {
     "id": 36,
@@ -500,7 +500,7 @@
     "streetAddress": "81 Express Park",
     "stars": 5,
     "realty": "Hane and Sons",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Isadore Bunworth"
   }, {
     "id": 37,
@@ -514,7 +514,7 @@
     "streetAddress": "462 Oak Hill",
     "stars": 40,
     "realty": "Mann Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Izzy Delue"
   }, {
     "id": 38,
@@ -528,7 +528,7 @@
     "streetAddress": "20 Longview Plaza",
     "stars": 50,
     "realty": "Dooley LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Prudy Ugolini"
   }, {
     "id": 39,
@@ -542,7 +542,7 @@
     "streetAddress": "1 Chinook Alley",
     "stars": 44,
     "realty": "Balistreri Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Sutherland Pedlow"
   }, {
     "id": 40,
@@ -556,7 +556,7 @@
     "streetAddress": "639 Blackbird Circle",
     "stars": 40,
     "realty": "Watsica, Schmitt and Bins",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Baxie Kimblin"
   }, {
     "id": 41,
@@ -570,7 +570,7 @@
     "streetAddress": "915 Brickson Park Parkway",
     "stars": 20,
     "realty": "Spinka, Daugherty and Heller",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Elvis Balhatchet"
   }, {
     "id": 42,
@@ -584,7 +584,7 @@
     "streetAddress": "6 Nancy Street",
     "stars": 32,
     "realty": "Buckridge-Mueller",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Avivah Monkeman"
   }, {
     "id": 43,
@@ -598,7 +598,7 @@
     "streetAddress": "753 Forest Dale Way",
     "stars": 17,
     "realty": "Altenwerth-Hintz",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Lexie Kondratenya"
   }, {
     "id": 44,
@@ -612,7 +612,7 @@
     "streetAddress": "79986 Autumn Leaf Circle",
     "stars": 37,
     "realty": "Homenick-Heller",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Cletus Cowlard"
   }, {
     "id": 45,
@@ -626,7 +626,7 @@
     "streetAddress": "6506 Blue Bill Park Road",
     "stars": 20,
     "realty": "Cormier, Emard and Purdy",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Judd Nisuis"
   }, {
     "id": 46,
@@ -640,7 +640,7 @@
     "streetAddress": "6 Jackson Crossing",
     "stars": 40,
     "realty": "Cruickshank-Osinski",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Kristos Eglinton"
   }, {
     "id": 47,
@@ -654,7 +654,7 @@
     "streetAddress": "1527 American Ash Avenue",
     "stars": 22,
     "realty": "Gusikowski LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Nickolas Adshed"
   }, {
     "id": 48,
@@ -668,7 +668,7 @@
     "streetAddress": "111 Forest Dale Trail",
     "stars": 32,
     "realty": "Roob, Abshire and Schowalter",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Kerstin Votier"
   }, {
     "id": 49,
@@ -682,7 +682,7 @@
     "streetAddress": "04 Autumn Leaf Center",
     "stars": 6,
     "realty": "Mohr LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Kath Methingam"
   }, {
     "id": 50,
@@ -696,7 +696,7 @@
     "streetAddress": "0 Sundown Parkway",
     "stars": 14,
     "realty": "Jones LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Aubrey O'Doohaine"
   }, {
     "id": 51,
@@ -710,7 +710,7 @@
     "streetAddress": "6549 Hollow Ridge Street",
     "stars": 23,
     "realty": "Sanford Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Jeanie Gonzalo"
   }, {
     "id": 52,
@@ -724,7 +724,7 @@
     "streetAddress": "82477 Towne Crossing",
     "stars": 45,
     "realty": "Cormier, Gerhold and Boehm",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Avie Ozintsev"
   }, {
     "id": 53,
@@ -738,7 +738,7 @@
     "streetAddress": "014 Monterey Center",
     "stars": 49,
     "realty": "Kuphal LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Wallis Jose"
   }, {
     "id": 54,
@@ -752,7 +752,7 @@
     "streetAddress": "8736 Hanson Road",
     "stars": 22,
     "realty": "Barrows and Sons",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Earvin Keward"
   }, {
     "id": 55,
@@ -766,7 +766,7 @@
     "streetAddress": "03733 Carberry Circle",
     "stars": 3,
     "realty": "Altenwerth LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Fowler Stuehmeyer"
   }, {
     "id": 56,
@@ -780,7 +780,7 @@
     "streetAddress": "9439 Myrtle Pass",
     "stars": 23,
     "realty": "Rodriguez, Schinner and Tremblay",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Yorker Hamshar"
   }, {
     "id": 57,
@@ -794,7 +794,7 @@
     "streetAddress": "266 Hoepker Circle",
     "stars": 25,
     "realty": "Hills LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Josefina Danilchenko"
   }, {
     "id": 58,
@@ -808,7 +808,7 @@
     "streetAddress": "751 Fisk Junction",
     "stars": 28,
     "realty": "Gaylord, Torp and Vandervort",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Rab MacMenamy"
   }, {
     "id": 59,
@@ -822,7 +822,7 @@
     "streetAddress": "99 Arizona Point",
     "stars": 28,
     "realty": "Gibson, Kuhlman and O'Connell",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Boyd Giddins"
   }, {
     "id": 60,
@@ -836,7 +836,7 @@
     "streetAddress": "0 Autumn Leaf Court",
     "stars": 43,
     "realty": "Veum-Gutkowski",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Correy Klazenga"
   }, {
     "id": 61,
@@ -850,7 +850,7 @@
     "streetAddress": "73 Briar Crest Court",
     "stars": 50,
     "realty": "Wyman, Graham and Miller",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Jenifer Frank"
   }, {
     "id": 62,
@@ -864,7 +864,7 @@
     "streetAddress": "60154 West Place",
     "stars": 44,
     "realty": "Lueilwitz-Hermann",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Isac Emlen"
   }, {
     "id": 63,
@@ -878,7 +878,7 @@
     "streetAddress": "13 Surrey Parkway",
     "stars": 46,
     "realty": "Hermann, Kertzmann and Breitenberg",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Cozmo Duncklee"
   }, {
     "id": 64,
@@ -892,7 +892,7 @@
     "streetAddress": "795 Dapin Trail",
     "stars": 27,
     "realty": "Waters, Kshlerin and Hessel",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Vallie Gieraths"
   }, {
     "id": 65,
@@ -906,7 +906,7 @@
     "streetAddress": "118 International Way",
     "stars": 28,
     "realty": "Tremblay-Crooks",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Osbourne Gaiger"
   }, {
     "id": 66,
@@ -920,7 +920,7 @@
     "streetAddress": "62579 Bashford Place",
     "stars": 4,
     "realty": "Rosenbaum LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Sandro Dooney"
   }, {
     "id": 67,
@@ -934,7 +934,7 @@
     "streetAddress": "3 Aberg Circle",
     "stars": 24,
     "realty": "Mertz-Reichel",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Harrie Jendrusch"
   }, {
     "id": 68,
@@ -948,7 +948,7 @@
     "streetAddress": "3 Stoughton Lane",
     "stars": 6,
     "realty": "Tromp-Johns",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Aime Pusey"
   }, {
     "id": 69,
@@ -962,7 +962,7 @@
     "streetAddress": "3652 East Lane",
     "stars": 14,
     "realty": "Huels and Sons",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Antone Haggarty"
   }, {
     "id": 70,
@@ -976,7 +976,7 @@
     "streetAddress": "58 Kennedy Park",
     "stars": 12,
     "realty": "Marvin, Conn and Goyette",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Edyth Fydoe"
   }, {
     "id": 71,
@@ -990,7 +990,7 @@
     "streetAddress": "1 Eagle Crest Court",
     "stars": 41,
     "realty": "Fahey and Sons",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Lin Lanahan"
   }, {
     "id": 72,
@@ -1004,7 +1004,7 @@
     "streetAddress": "14096 Mifflin Place",
     "stars": 25,
     "realty": "Schowalter, Mitchell and Rodriguez",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Edy Woodard"
   }, {
     "id": 73,
@@ -1018,7 +1018,7 @@
     "streetAddress": "86 Comanche Plaza",
     "stars": 34,
     "realty": "Rogahn LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Mavis Molan"
   }, {
     "id": 74,
@@ -1032,7 +1032,7 @@
     "streetAddress": "7 Warner Street",
     "stars": 22,
     "realty": "Ondricka, Dare and Zemlak",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Madelin Beig"
   }, {
     "id": 75,
@@ -1046,7 +1046,7 @@
     "streetAddress": "3 Menomonie Pass",
     "stars": 26,
     "realty": "Mills and Sons",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Jackie Falshaw"
   }, {
     "id": 76,
@@ -1060,7 +1060,7 @@
     "streetAddress": "98286 Bowman Court",
     "stars": 8,
     "realty": "O'Keefe, Miller and Miller",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Ham Naisbit"
   }, {
     "id": 77,
@@ -1074,7 +1074,7 @@
     "streetAddress": "9 Pearson Junction",
     "stars": 6,
     "realty": "Runolfsdottir-Johns",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Dugald Friary"
   }, {
     "id": 78,
@@ -1088,7 +1088,7 @@
     "streetAddress": "885 Lighthouse Bay Junction",
     "stars": 12,
     "realty": "Crist Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Paulie Skedgell"
   }, {
     "id": 79,
@@ -1102,7 +1102,7 @@
     "streetAddress": "09 Kingsford Trail",
     "stars": 7,
     "realty": "Glover Group",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Konstantine Rupert"
   }, {
     "id": 80,
@@ -1116,7 +1116,7 @@
     "streetAddress": "22 Northfield Court",
     "stars": 4,
     "realty": "Wilkinson-Nikolaus",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Jackson Althrop"
   }, {
     "id": 81,
@@ -1130,7 +1130,7 @@
     "streetAddress": "6514 Alpine Hill",
     "stars": 40,
     "realty": "Pfannerstill Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Carry Duthie"
   }, {
     "id": 82,
@@ -1144,7 +1144,7 @@
     "streetAddress": "9 Norway Maple Circle",
     "stars": 36,
     "realty": "Wisoky, Kerluke and Reichert",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Hersh Wein"
   }, {
     "id": 83,
@@ -1158,7 +1158,7 @@
     "streetAddress": "86 Mallory Pass",
     "stars": 26,
     "realty": "Cormier, Gutmann and Steuber",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Ericha Redington"
   }, {
     "id": 84,
@@ -1172,7 +1172,7 @@
     "streetAddress": "47 Milwaukee Terrace",
     "stars": 20,
     "realty": "Kohler-Dickinson",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Sandi Alvis"
   }, {
     "id": 85,
@@ -1186,7 +1186,7 @@
     "streetAddress": "4166 International Street",
     "stars": 19,
     "realty": "Tremblay, O'Keefe and Wisoky",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Olav Gayler"
   }, {
     "id": 86,
@@ -1200,7 +1200,7 @@
     "streetAddress": "49 Bunting Crossing",
     "stars": 45,
     "realty": "Hettinger Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Roz Mohammad"
   }, {
     "id": 87,
@@ -1214,7 +1214,7 @@
     "streetAddress": "40 Monument Pass",
     "stars": 35,
     "realty": "Rau Group",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Cherlyn Gasperi"
   }, {
     "id": 88,
@@ -1228,7 +1228,7 @@
     "streetAddress": "793 Caliangt Park",
     "stars": 17,
     "realty": "Toy-Herman",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Gerianna Dobrowski"
   }, {
     "id": 89,
@@ -1242,7 +1242,7 @@
     "streetAddress": "5568 Express Drive",
     "stars": 30,
     "realty": "Rau LLC",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Lori Jiroutka"
   }, {
     "id": 90,
@@ -1256,7 +1256,7 @@
     "streetAddress": "1 Bay Park",
     "stars": 14,
     "realty": "Cartwright Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Kerstin Lamball"
   }, {
     "id": 91,
@@ -1270,7 +1270,7 @@
     "streetAddress": "8 Melrose Junction",
     "stars": 28,
     "realty": "Lueilwitz-Barton",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Korella Suttling"
   }, {
     "id": 92,
@@ -1284,7 +1284,7 @@
     "streetAddress": "7 Almo Trail",
     "stars": 29,
     "realty": "Quitzon, Stracke and Turcotte",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Markus Sivewright"
   }, {
     "id": 93,
@@ -1298,7 +1298,7 @@
     "streetAddress": "5 Holy Cross Center",
     "stars": 10,
     "realty": "Spencer Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Nady Housegoe"
   }, {
     "id": 94,
@@ -1312,7 +1312,7 @@
     "streetAddress": "97168 Spohn Crossing",
     "stars": 26,
     "realty": "Mante, Schinner and Haley",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Lurette MacCard"
   }, {
     "id": 95,
@@ -1326,7 +1326,7 @@
     "streetAddress": "419 Hermina Lane",
     "stars": 8,
     "realty": "McLaughlin, Parker and Zulauf",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Seka Maffy"
   }, {
     "id": 96,
@@ -1340,7 +1340,7 @@
     "streetAddress": "4 6th Pass",
     "stars": 24,
     "realty": "Harber-Barton",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Ezri Polland"
   }, {
     "id": 97,
@@ -1354,7 +1354,7 @@
     "streetAddress": "51404 Chive Drive",
     "stars": 7,
     "realty": "Pollich, Murphy and Paucek",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Hillery Kebbell"
   }, {
     "id": 98,
@@ -1368,7 +1368,7 @@
     "streetAddress": "624 Hazelcrest Circle",
     "stars": 3,
     "realty": "Moore-Dicki",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Had Kintzel"
   }, {
     "id": 99,
@@ -1382,7 +1382,7 @@
     "streetAddress": "5109 Union Circle",
     "stars": 3,
     "realty": "Denesik Inc",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Juliane Hartop"
   }, {
     "id": 100,
@@ -1396,7 +1396,9 @@
     "streetAddress": "8 Russell Lane",
     "stars": 48,
     "realty": "Fisher-Rippin",
-    "shortRealtor": null,
+    "shortRealtor": 'placeholder',
     "realtor": "Babbie Smythin"
   }
-]
+];
+
+module.exports.myData = myData;
