@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const db = require('../../index.js')
 
-let listingSchema = mongoose.Schema({
+const listingSchema = new mongoose.Schema({
     id: Number,
     squareFootage: Number,
     pricePerSquareFoot: Number,
@@ -16,18 +17,6 @@ let listingSchema = mongoose.Schema({
     realtor: String
   });
   
-  let Listing = mongoose.model('Listing', listingSchema)
+let Listing = mongoose.model('Listing', listingSchema)
   
-  // const selectAll = function(callback) {
-  //   Item.find({}, (err, items) => {
-  //     if (err) {
-  //       callback(err, null)
-  //     } else {
-  //       callback(null, items);
-  //     }
-  //   });
-  // };
-  
-  // module.exports.selectAll = selectAll;
-  
-  module.exports.Listing = Listing;
+module.exports = Listing;

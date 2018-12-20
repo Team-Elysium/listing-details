@@ -1,3 +1,4 @@
+//probably will not use-- got from Mongaroo
 var myData = [ {
     "id": 1,
     "squareFootage": 529,
