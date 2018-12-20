@@ -178,50 +178,12 @@ for (var i = 0; i < dataArray.length; i++) {
     shortRealty: data.shortRealty,
     realtor: data.realtor
   });
-      //console.log(listing);
-      listing.save(err => {
-        // console.log('bye')
-        if (err) {
-          console.log(err);
-        }
-      });
+  listing.save(err => {
+    if (err) {
+      console.log(err);
+    }
+  });
 }
-
-
-
-// class FakerDataGenerator {
-//   constructor() {
-//     this.data = [];
-//   }
-
-//   generateData() {
-    
-
-//       const listing = new Listing(item);
-//       //console.log(listing);
-//       listing.save(err => {
-//         // console.log('bye')
-//         if (err) {
-//           console.log(err);
-//         }
-//       });
-      
-//     }
-
-    // Promise.all(this.data)
-    // .then((results) => {
-    //   console.log('sample item', results[0].stars);
-    //   console.log(results + 'saved in database')
-    // })
-    // .catch((err) => {
-    //   console.log(err);
-    // });
-
-    // return this.data;
-//   }
-// }
-// const myListing = new FakerDataGenerator();
-// myListing.generateData();
 
 //drop db before seed
 
