@@ -14,6 +14,11 @@ function generateData() {
     item.id = i;
     
     if (i < 25) {
+      item.price = faker.random.number({
+        min: 250000,
+        max: 500000
+      });
+
       item.squareFootage = faker.random.number({
         min: 350,
         max: 600
@@ -41,6 +46,11 @@ function generateData() {
     }
 
     if (i >= 25 && i < 50) {
+      item.price = faker.random.number({
+        min: 500000,
+        max: 1000000
+      });
+
       item.squareFootage = faker.random.number({
         min: 450,
         max: 900
@@ -68,6 +78,11 @@ function generateData() {
     }
 
     if (i >= 50 && i < 75) {
+      item.price = faker.random.number({
+        min: 1000000,
+        max: 3000000
+      });
+
       item.squareFootage = faker.random.number({
         min: 1000,
         max: 2500,
@@ -95,6 +110,11 @@ function generateData() {
     }
 
     if (i >= 75 && i < 100) {
+      item.price = faker.random.number({
+        min: 3000000,
+        max: 20000000
+      });
+
       item.squareFootage = faker.random.number({
         min: 2000,
         max: 6000
@@ -165,6 +185,7 @@ for (var i = 0; i < dataArray.length; i++) {
   let data = dataArray[i];
   const listing = new Listing({
     id: data.id,
+    price: data.price,
     squareFootage: data.squareFootage,
     pricePerSquareFoot: data.pricePerSquareFoot,
     rooms: data.rooms,

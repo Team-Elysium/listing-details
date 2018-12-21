@@ -1,4 +1,4 @@
-//probably will not use-- got from Mongaroo
+//probably will not use-- got from Mockaroo
 var myData = [ {
     "id": 1,
     "squareFootage": 529,

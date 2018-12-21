@@ -3,6 +3,7 @@ const db = require('../../index.js')
 
 const listingSchema = new mongoose.Schema({
     id: Number,
+    price: Number,
     squareFootage: Number,
     pricePerSquareFoot: Number,
     rooms: Number,
