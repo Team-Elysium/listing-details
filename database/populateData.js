@@ -9,7 +9,6 @@ let dataArray = [];
 
 function generateData() {
   for (let i = 0; i < 100; i++) {
-    // console.log(i);
     let item = {};
     item.id = i;
     
@@ -179,8 +178,6 @@ function generateData() {
   }
 }
 
-generateData();
-
 for (var i = 0; i < dataArray.length; i++) {
   let data = dataArray[i];
   const listing = new Listing({
@@ -206,13 +203,15 @@ for (var i = 0; i < dataArray.length; i++) {
   });
 }
 
+generateData();
+
 //drop db before seed
 
-// Listing.remove({}).exec((err, results) => {
-//   if (err) {
-//     console.log(err);
-//   } 
-//   const myListing = new FakerDataGenerator();
-//   myListing.generateData();
-// });
+Listing.remove({}).exec((err, results) => {
+  if (err) {
+    console.log(err);
+  } 
+  const myListing = new Listing;
+  myListing.generateData();
+});
 

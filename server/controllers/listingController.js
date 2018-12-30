@@ -5,7 +5,7 @@ const Listing = require('../../database/models/ListingSchema');
     Listing.find({ id: id })
       .exec((err, data) => {
         if (err) {
-          console.log('cannot find err')
+          res.send(err);
         } else if (data) {
           res.send(data);
         }
