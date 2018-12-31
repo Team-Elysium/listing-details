@@ -8,7 +8,7 @@ const app = express();
 // process.env.PORT |
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname + '/../client/dist')));
+app.use('/:id', express.static(path.join(__dirname + '/../client/dist')));
 
 // app.get('/', (req, res) => {
 //   // res.redirect('/items/1');

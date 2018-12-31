@@ -178,6 +178,8 @@ function generateData() {
   }
 }
 
+generateData();
+
 for (var i = 0; i < dataArray.length; i++) {
   let data = dataArray[i];
   const listing = new Listing({
@@ -196,6 +198,7 @@ for (var i = 0; i < dataArray.length; i++) {
     shortRealty: data.shortRealty,
     realtor: data.realtor
   });
+  
   listing.save(err => {
     if (err) {
       console.log(err);
@@ -203,15 +206,16 @@ for (var i = 0; i < dataArray.length; i++) {
   });
 }
 
-generateData();
+
+
 
 //drop db before seed
 
-Listing.remove({}).exec((err, results) => {
-  if (err) {
-    console.log(err);
-  } 
-  const myListing = new Listing;
-  myListing.generateData();
-});
+// Listing.remove({}).exec((err, results) => {
+//   if (err) {
+//     console.log(err);
+//   } 
+//   const myListing = new Listing;
+//   myListing.generateData();
+// });
 

@@ -5,30 +5,50 @@ import Details from './components/Details.jsx'
 // import Agent from './components/Agent.jsx'
 // import Dashboard from './components/Dashboard.jsx'
 import Modal from './components/Modal.jsx'
+import ShareModal from './components/ShareModal.jsx'
+import Stars from './components/Stars.jsx'
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       details: [],
-      show: false
+      show: false,
+      showShare: false,
+      stars: 5
       // agent: []
     }
     this.getDetails = this.getDetails.bind(this);
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
+    this.showShareModal = this.showShareModal.bind(this);
+    this.hideShareModal = this.hideShareModal.bind(this);
+    this.getStars = this.getStars.bind(this);
   }
 
   componentDidMount() {
-    // let {id} = req.params;
     this.getDetails();
+    this.getStars();
   }
 
   getDetails() {
-    Axios.get("/api/items/88")
+    let id = document.location.pathname;
+    id = parseInt(id.match(/\d+/g));
+
+    Axios.get(`/api/items/${id}`)
     .then(({ data }) => {
+      console.log(data)
       this.setState({
         details: data
+      });
+    });
+  }
+
+  getStars() {
+    Axios.get("/api/items/89")
+    .then((response) => {
+      this.setState({
+        stars: response.data
       });
     });
   }
@@ -41,18 +61,27 @@ class App extends React.Component {
     this.setState({ show: false });
   }
 
+  showShareModal() {
+    this.setState({ showShare: true });
+  }
+
+  hideShareModal() {
+    this.setState({ showShare: false });
+  }
+
   render() {
     return (
       <div className="app">
         <div className="main">
           <Details details={this.state.details}/>
-          {/* <Dashboard /> */}
-          <Modal show={this.state.show} handleClose={this.hideModal} >
-            <p>Modal</p>
-            <p>Data</p>
-          </Modal>
-          <button type='button' onClick={this.showModal}>Open</button>
         </div>
+        <div className="actions">
+          <Modal show={this.state.show} handleClose={this.hideModal}/>
+          <ShareModal show={this.state.showShare} handleClose={this.hideShareModal}/>
+            <button type="button" onClick={this.showModal}>SAVE</button>
+            <button type="button" onClick={this.showShareModal}>SHARE</button>
+        </div>
+        {/* <Stars stars={this.state.stars}/> */}
       </div>
     )
   }

@@ -8,9 +8,9 @@ class Details extends React.Component {
   render() {
     return (
       <ul className="details">
-      {this.props.details.map((detail, ids) => {
+      {this.props.details.map((detail, id) => {
         return (
-          <li className="detail_item" key={ids}>
+          <li className="detail_item" key={id}>
           <div className="building-title">{detail.streetAddress}</div>
           <div className="inner_details_price">${detail.price} 
             <span className="secondary_text"> FOR SALE</span>
