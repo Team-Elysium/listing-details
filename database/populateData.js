@@ -141,11 +141,11 @@ function generateData() {
     }
 
     let num1 = faker.random.number({
-      max:4
+      max: 3
     });
 
     let num2 = faker.random.number({
-      max:5
+      max: 4
     });
 
     const houseType = [

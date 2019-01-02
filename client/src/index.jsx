@@ -15,7 +15,6 @@ class App extends React.Component {
       details: [],
       show: false,
       showShare: false,
-      stars: 5
       // agent: []
     }
     this.getDetails = this.getDetails.bind(this);
@@ -23,12 +22,10 @@ class App extends React.Component {
     this.hideModal = this.hideModal.bind(this);
     this.showShareModal = this.showShareModal.bind(this);
     this.hideShareModal = this.hideShareModal.bind(this);
-    this.getStars = this.getStars.bind(this);
   }
 
   componentDidMount() {
     this.getDetails();
-    this.getStars();
   }
 
   getDetails() {
@@ -39,16 +36,7 @@ class App extends React.Component {
     .then(({ data }) => {
       console.log(data)
       this.setState({
-        details: data
-      });
-    });
-  }
-
-  getStars() {
-    Axios.get("/api/items/89")
-    .then((response) => {
-      this.setState({
-        stars: response.data
+        details: data,
       });
     });
   }
