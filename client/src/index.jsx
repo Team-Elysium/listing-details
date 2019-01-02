@@ -63,13 +63,14 @@ class App extends React.Component {
         <div className="main">
           <Details details={this.state.details}/>
         </div>
+        
         <div className="actions">
           <Modal show={this.state.show} handleClose={this.hideModal}/>
           <ShareModal show={this.state.showShare} handleClose={this.hideShareModal}/>
-            <button type="button" onClick={this.showModal}>SAVE</button>
-            <button type="button" onClick={this.showShareModal}>SHARE</button>
+          <button type="button" className="btn" onClick={this.showModal}
+            data-popuptext="Want to stay updated?">SAVE</button> 
+          <button type="button" className="btn" onClick={this.showShareModal}>SHARE</button>
         </div>
-        {/* <Stars stars={this.state.stars}/> */}
       </div>
     )
   }

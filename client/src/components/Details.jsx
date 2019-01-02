@@ -2,8 +2,13 @@ import React from 'react';
 
 class Details extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.numberWithCommas = this.numberWithCommas.bind(this);
   }
+
+  numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }   
 
   render() {
     return (
@@ -11,8 +16,8 @@ class Details extends React.Component {
       {this.props.details.map((detail, id) => {
         return (
           <li className="detail_item" key={id}>
-          <div className="building-title">{detail.streetAddress}</div>
-          <div className="inner_details_price">${detail.price} 
+          <div className="building-title">{detail.streetAddress}</div>      
+          <div className="inner_details_price">${this.numberWithCommas(detail.price)}
             <span className="secondary_text"> FOR SALE</span>
           </div>
           <div className="inner_details">
@@ -23,14 +28,15 @@ class Details extends React.Component {
             <span className="detail_cell last_detail_cell">{detail.baths} baths </span>
           </div>
           <div className="house_type">{detail.houseType} in <span className="blue_text">{detail.neighborhood}</span></div>
-          <div className="stars">This sale has been saved by {detail.stars} users.
-          See a problem with this listing? Report it here.</div>
+
+          <div className="stars">This sale has been saved by {detail.stars} users.</div>
+          <div>See a problem with this listing? Report it <span className="blue_text">here.</span></div>
           <div className="realtor">Listing by {detail.realty}, Limited Liability Broker, 660 Madison Ave, New York NY 10065.</div>
           <div className="realtor_box">
             <div className="listed">LISTED AT:</div>
             <div className="realtor_company blue_text bold">{detail.realty}</div>
             <div className="agent blue_text">{detail.realtor} </div>
-            <div className="agent_button">CONTACT AGENT</div>
+            <div className="agent_button fill_text">CONTACT AGENT</div>
           </div>
           </li>
         )
