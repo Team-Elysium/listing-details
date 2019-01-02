@@ -18,19 +18,41 @@ html, body, #app {
   overflow: hidden;
 }
 
-.hover {
-  color: darkslategrey;
-  text-decoration: underline;
+.btn {
+  border: 1px solid #CDCDCD;
+  color: #0080C6;
+  cursor: pointer;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 48px;
+  position: relative;
+  text-align: center;
+  margin-left: 10px;
+  width: 40%;
+}
+
+.btn:hover {
+  color: orange
 }
 
 .details {
-  text-align: center;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+.house_type {
+  margin-bottom: 10px;
 }
 
 .building-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 
 .inner_details_price {
@@ -48,6 +70,7 @@ html, body, #app {
 
 .inner_details {
   border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
   margin-bottom: 3px;
   margin-top: 3px;
   padding: 3px;
@@ -80,7 +103,6 @@ html, body, #app {
   border-radius: 0 0 0 0;
   outline: none;
   position: absolute;
-  margin-top: 0;
   top: 50%;
   overflow: visible;
 }
@@ -139,6 +161,56 @@ html, body, #app {
   box-sizing: border-box;
 }
 
+.popup {
+  display:inline-block;
+  position:relative;
+  border-bottom:1px dotted #666;
+  text-align:left;
+}
+
+.popup .top {
+  min-width:200px; 
+  top:-20px;
+  left:50%;
+  transform:translate(-50%, -100%);
+  padding:10px 20px;
+  color:#444444;
+  background-color:#EEEEEE;
+  font-weight:normal;
+  font-size:13px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  display:none;
+}
+
+.popup:hover .data-popuptext {
+  display:block;
+}
+
+.popup .data-popuptext i {
+  position:absolute;
+  top:100%;
+  left:50%;
+  margin-left:-12px;
+  width:24px;
+  height:12px;
+  overflow:hidden;
+}
+
+.popup .data-popuptext i::after {
+  content:'';
+  position:absolute;
+  width:12px;
+  height:12px;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  background-color:#EEEEEE;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
 /* .email_dialog {
   margin-bottom: 11px;
   border: 1px solid #E6E6E6;
@@ -173,6 +245,10 @@ html, body, #app {
   box-sizing: border-box;
 } */
 
+.realtor {
+  margin-top: 20px;
+}
+
 .realtor_box {
   border: 2px solid black;
   padding: 7px 14px;
@@ -183,20 +259,33 @@ html, body, #app {
   margin: 15px 0 25px 0;
 }
 
+.realtor_company {
+  font-size: 16px;
+}
+
 .listed {
   color: #8C8C8C;
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 18px;
 }
 .blue_text {
   color: #0080C6;
+}
+
+.blue_text:hover {
+  color: orange;
+  text-decoration: underline;
 }
 
 .bold {
   font-weight: bold;
 }
 
+.fill_text:hover {
+  background-color: orange;
+}
 .agent_button {
   border: 1px solid #FDC435;
   background-color: #FFF;
@@ -205,8 +294,10 @@ html, body, #app {
   font-weight: bold;
   line-height: 30px;
   padding: 0 16px;
-  min-width: 42px;
+  max-width: 140px;
   text-align: left;
+  margin-top: 24px;
+  margin-bottom: 12px;
 }
 * {
   box-sizing: border-box;
