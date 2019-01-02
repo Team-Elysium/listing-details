@@ -22,10 +22,16 @@ class Details extends React.Component {
             <span className="detail_cell">{detail.beds} beds </span>
             <span className="detail_cell last_detail_cell">{detail.baths} baths </span>
           </div>
-          <div className="inner_details">{detail.houseType} in {detail.neighborhood}</div>
+          <div className="house_type">{detail.houseType} in {detail.neighborhood}</div>
           <div className="stars">This sale has been saved by {detail.stars} users.
           See a problem with this listing? Report it here.</div>
           <div className="realtor">Listing by {detail.realty}, Limited Liability Broker, 660 Madison Ave, New York NY 10065.</div>
+          <div className="realtor_box">
+            <div className="listed">LISTED AT:</div>
+            <div className="realtor_company blue_text bold">{detail.realty}</div>
+            <div className="agent blue_text">{detail.realtor} </div>
+            <div className="agent_button">CONTACT AGENT</div>
+          </div>
           </li>
         )
       })}
