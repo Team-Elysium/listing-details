@@ -32,7 +32,7 @@ class App extends React.Component {
     let id = document.location.pathname;
     id = parseInt(id.match(/\d+/g));
 
-    Axios.get(`/api/items/${id}`)
+    Axios.get(`/api/details/${id}`)
     .then(({ data }) => {
       console.log(data)
       this.setState({

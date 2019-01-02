@@ -10,11 +10,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use('/:id', express.static(path.join(__dirname + '/../client/dist')));
 
-// app.get('/', (req, res) => {
-//   // res.redirect('/items/1');
-//   console.log('hello');
-// });
-
 app.use('/', router);
 
 let port = 3012
