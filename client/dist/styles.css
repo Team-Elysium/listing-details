@@ -1,4 +1,4 @@
-html, body, #app {
+/* html, body, #app {
     color: #1A1F2C;
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -7,21 +7,25 @@ html, body, #app {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased !important;
     -webkit-text-size-adjust: 100%;
-}
+} */
 
 .app {
-  height: 80%;
-  width: 70%;
+  height: 100%;
+  width: 30%;
   background-color: white;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+
 }
 
 .btn {
   border: 1px solid #CDCDCD;
   color: #0080C6;
-  cursor: pointer;
+  cursor: hand;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -45,18 +49,18 @@ ul {
 }
 
 .house_type {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .building-title {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 30px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
 .inner_details_price {
-  font-size: 27px;
+  font-size: 26px;
   font-weight: bold;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   white-space: nowrap;
@@ -76,7 +80,7 @@ ul {
   padding: 3px;
   box-sizing: border-box;
   display: block;
-  font-size: 1em;
+  font-size: 14px;
 }
 
 .detail_cell {
@@ -104,7 +108,7 @@ ul {
   outline: none;
   position: absolute;
   top: 50%;
-  overflow: visible;
+  overflow: auto;
 }
 
 .modal-main {
@@ -115,6 +119,7 @@ ul {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+  z-index: 100;
 }
 
 .modal-content {
@@ -140,6 +145,7 @@ ul {
 .modal-body {
   padding-left: 20px;
   padding-top: 20px;
+  padding-right: 20px;
 }
 
 .navbar {
@@ -152,13 +158,87 @@ ul {
   border: 1px solid transparent;
 }
 
+.secondary_question {
+  margin-top: -10px;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.stars {
+  margin-top: 20px;
+}
+
+.register {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tabs-container {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.tabs {
+  cursor: pointer;
+  background-color: #F5F5F5;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: #1A1F2C;
+  border: 1px solid #CDCDCD;
+  letter-spacing: .04em;
+  height: 40px;
+  padding: 0 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.second {
+  background-color: white;
+}
+
+.realtor-tabs {
+  
+  border: 1px solid #E6E6E6;
+  padding: 10px 20px;
+  text-align: left;
+  vertical-align: top;
+  box-sizing: border-box;
+  color:lightgrey;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+.last_interest {
+  color: #1A1F2C;
+}
+
+.terms_use {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .field_container {
-  margin-bottom: 11px;
+  margin-bottom: 16px;
   border: 1px solid #E6E6E6;
   padding: 7px 17px;
   text-align: left;
   vertical-align: top;
   box-sizing: border-box;
+}
+
+.register_label {
+  color:lightgrey;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 979px){
+  .app  {
+    width: 44%;
+    padding-left: 14px;
+  }
 }
 
 .popup {
@@ -235,16 +315,6 @@ ul {
   display: none;
 }
 
-/* .input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-} */
-
 .realtor {
   margin-top: 20px;
 }
@@ -271,7 +341,7 @@ ul {
   margin-top: 18px;
 }
 .blue_text {
-  color: #0080C6;
+  color:  #0080C6;
 }
 
 .blue_text:hover {
@@ -283,23 +353,61 @@ ul {
   font-weight: bold;
 }
 
+.contact_title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
 .fill_text:hover {
   background-color: orange;
 }
-.agent_button {
+
+.open-house {
+  margin-bottom: 20px;
+}
+
+.open-house-text {
+  display: inline-block;
+}
+
+.open-house-cal {
+  display: inline-block;
+  margin-left: 34px;
+}
+.open-house-sign {
+  color:grey;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.calendar {
   border: 1px solid #FDC435;
   background-color: #FFF;
   color: #1A1F2C;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
-  line-height: 30px;
-  padding: 0 16px;
-  max-width: 140px;
+  line-height: 20px;
+  padding: 0 12px;
+  max-width: 130px;
   text-align: left;
-  margin-top: 24px;
-  margin-bottom: 12px;
+  
 }
+
+/* .star {
+  padding: 20px;
+  background: transparent;
+  text-shadow: 1px 1px 1px #202020;
+  font-family: "Lato", sans-serif;
+  font-size: 18pt;
+  border: 1px solid lightblue;
+  color: lightblue;
+} */
+
 * {
   box-sizing: border-box;
 }
+
 

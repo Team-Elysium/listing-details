@@ -1,44 +1,41 @@
 import React from 'react';
 
-const Modal = ({ handleClose, show}) => {
-    const showHideClassName = show ? "modal display-block" : "modal display-none";
-  
-    return (
-      <div className={showHideClassName}>
-        <section className="modal-main">
-          <div className="modal-content">
-            <div className="modal-header modal-header-navbar">
-            <b>Share this Listing </b> </div>
-            <div className="modal-body">
-          <div className="email_dialog">
-            <div className="field_container">
-              <div htmlFor="from">Your Email</div>
-              <input type="text" name="from" id="from"></input> 
+const Modal = ({ handleClose, show }) => {
+  const showHideClassName = show ? "modal display-block" : "modal display-none";
+
+  return (
+    <div className={showHideClassName}>
+      <section className="modal-main">
+        <div className="modal-content">
+          <div className="modal-header modal-header-navbar">
+            <b>Register</b> </div>
+          <div className="modal-body">
+            <div className="register">Register for free to save this property and receive updates on price and status changes.</div>
+            <div className="tabs-container">
+              <div className="tabs first">Register</div>
+              <div className="tabs second">Sign in</div>
             </div>
-            <div className="field_container">
-              <label htmlFor="to"> Friend's Email Address (separated by commas)</label>
-              <input type="text" name="to" id="to"></input>
+            <div className="field_container register_label">
+              {/* <label htmlFor="to"></label>
+              <input type="text" name="to" id="to"></input> */}
+              <label>Email Address</label>
             </div>
-            <div className="field_container">
-              <label htmlFor="to"> Message(optional)</label>
-              <input type="text" name="to" id="to"></input>
+            <div className="secondary_question blue_text">Real Estate Professional?</div>
+            <div className="field_container register_label">
+              <label>Password (at least 5 characters)</label>
             </div>
-            <div className="field_container">
-              <input type="text" name="to" id="to"></input>
-              <input type="checkbox" name="copytomyself" id="copytomyself" value="true"></input>
-              <label htmlFor="copytomyself">Send me a copy of this</label>
-            </div>
-            </div>
-            
+            <div className="terms_use">I accept StreetBreezy's <span className="blue_text">Terms of Use</span></div>
           </div>
-          
-          <button onClick={handleClose}>close</button>
-          
-          </div>
-        </section>
+
         </div>
-    )    
-  };
-  
+
+        <button onClick={handleClose}>close</button>
+
+
+      </section>
+    </div>
+  )
+};
+
 
 export default Modal;
