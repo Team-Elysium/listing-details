@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './Modal.jsx'
+import SaveModal from './SaveModal.jsx'
 import ShareModal from './ShareModal.jsx'
 import ProblemModal from './Problem.jsx'
 
@@ -77,7 +77,7 @@ class Details extends React.Component {
                 <div className="open-house-cal calendar fill_text"><span className="fa fa-calendar"></span> ADD TO PLANNER</div>
               </div>
               <div className="actions">
-                <Modal show={this.state.show} handleClose={this.hideModal} />
+                <SaveModal show={this.state.show} handleClose={this.hideModal} />
                 <ShareModal show={this.state.showShare} handleClose={this.hideShareModal} />
                 <button type="button" className="star btn" onClick={this.showModal}
                 ><span className="fa fa-star"></span> SAVE </button>
@@ -92,15 +92,22 @@ class Details extends React.Component {
               <div className="realtor">Listing by {detail.realty}, Limited Liability Broker, 660 Madison Ave, New York NY 10065.</div>
               <div className="realtor_box">
                 <div className="contact_title">CONTACT AGENT</div>
+                <div className="tabs-container realtor-options">
+                  <div className="contact-agent-tabs learn-more">Learn more</div>
+                  <div className="contact-agent-tabs seller-info">Seller Agent's Info</div>
+                </div>
                 <div className="realtor-tabs-container">
                   <div className="realtor-tabs first">Your Name</div>
                   <div className="realtor-tabs second">Phone Number</div>
                   <div className="realtor-tabs third">Email</div>
-                <div className="realtor-interested-box">
-                  <div className="realtor-tabs last_interest">I'm interested in {detail.streetAddress}. <br/>
-                  <br/><br/><br/><br/></div>
+                  <div className="realtor-interested-box">
+                    <div className="realtor-tabs last_interest">I'm interested in {detail.streetAddress}. <br />
+                      <br /><br /><br /><br /></div>
                   </div>
+                  <div className="send-message">Send Message</div>
+                  <div className="phone-number">Or call 1-800-BUY-APTS for more info</div>
                 </div>
+                <div className="agreement">By pressing Send Message, you agree that StreetBreezy and real estate professionals may call/text you about your inquiry, which may involve use of automated means and prerecorded/artificial voices. You don't need to consent as a condition of buying any property, goods or services. Message/data rates may apply.</div>
                 <div className="listed">LISTED AT:</div>
                 <div className="realtor_company blue_text bold">{detail.realty}</div>
                 <div className="agent blue_text">{detail.realtor} </div>
