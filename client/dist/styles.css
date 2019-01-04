@@ -11,7 +11,7 @@
 
 .app {
   height: 100%;
-  width: 30%;
+  width: 34%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -34,6 +34,11 @@
   text-align: center;
   margin-left: 10px;
   width: 40%;
+}
+
+.htmlFor {
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .btn:hover {
@@ -170,10 +175,71 @@ ul {
   margin-top: 20px;
 }
 
+.friend_email {
+  margin-top: 18px;
+  color: #1A1F2C;
+}
+
+.phone-number {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.agreement {
+  font-size: 10px;
+  color: grey;
+  margin-top: 20px;
+}
+
+.send-message {
+  cursor: pointer;
+  background-color: #F5F5F5;
+  line-height: 40px;
+  color: white;
+  border: 1px solid #CDCDCD;
+  letter-spacing: .04em;
+  height: 40px;
+  width: 100%;
+  font-size: 12px;
+  padding: 0 15px;
+  display: inline-block;
+  text-align: center;
+  background-color: #0080C6;
+  border: 1px solid #0080C6;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.share-form-tab {
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;
+}
+
 .register {
   font-size: 13px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.contact-agent-tabs {
+  cursor: pointer;
+  background-color: #F5F5F5;
+  line-height: 40px;
+  color: grey;
+  border: 1px solid #CDCDCD;
+  letter-spacing: .04em;
+  height: 40px;
+  width: 50%;
+  padding: 0 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.learn-more {
+  background-color: rgba(212,236,250,0.4);
+  color: #0080C6;
 }
 
 .tabs-container {
@@ -201,7 +267,6 @@ ul {
 }
 
 .realtor-tabs {
-  
   border: 1px solid #E6E6E6;
   padding: 10px 20px;
   text-align: left;
@@ -210,6 +275,7 @@ ul {
   color:lightgrey;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
+
 .last_interest {
   color: #1A1F2C;
 }
@@ -291,14 +357,9 @@ ul {
   box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
 
-/* .email_dialog {
-  margin-bottom: 11px;
-  border: 1px solid #E6E6E6;
-  padding: 7px 17px;
-  text-align: left;
-  vertical-align: top;
-  
-} */
+.email_dialog {
+  margin-top: 10px;
+}
 
 .form {
   font-size: 14px;

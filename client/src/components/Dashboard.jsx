@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Modal from './Modal.jsx'
+import Modal from './SaveModal.jsx'
 
 class Dashboard extends React.Component {
   constructor(props) {

@@ -10,21 +10,18 @@ const ShareModal = ({ handleClose, show}) => {
             <div className="modal-header modal-header-navbar">
             <b>Share this Listing </b> </div>
             <div className="modal-body">
-          <div className="email_dialog">
-            <div className="field_container">
+          <div className="email_dialog friend_email">
               <div htmlFor="from">Your Email</div>
-              <input type="text" name="from" id="from"></input> 
+              <input type="text" className="share-form-tab"></input> 
+            <div className="friend_email">
+              <div htmlFor="from">Friend's Email Address (separated by commas)</div>
+              <input type="text" className="share-form-tab"></input> 
             </div>
-            <div className="field_container">
-              <label htmlFor="to"> Friend's Email Address (separated by commas)</label>
-              <input type="text" name="to" id="to"></input>
+            <div className="friend_email message">
+              <div htmlFor="from">Message (optional)</div>
+              <input type="text" className="share-form-tab"></input> 
             </div>
-            <div className="field_container">
-              <label htmlFor="to"> Message(optional)</label>
-              <input type="text" name="to" id="to"></input>
-            </div>
-            <div className="field_container">
-              <input type="text" name="to" id="to"></input>
+            <div className="friend_email copy">
               <input type="checkbox" name="copytomyself" id="copytomyself" value="true"></input>
               <label htmlFor="copytomyself">Send me a copy of this</label>
             </div>

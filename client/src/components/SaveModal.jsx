@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Modal = ({ handleClose, show }) => {
+const SaveModal = ({ handleClose, show }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
   return (
@@ -38,4 +38,4 @@ const Modal = ({ handleClose, show }) => {
 };
 
 
-export default Modal;
+export default SaveModal;
