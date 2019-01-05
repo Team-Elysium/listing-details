@@ -8,7 +8,7 @@ const ProblemModal = ({ handleClose, show}) => {
         <section className="modal-main">
           <div className="modal-content">
             <div className="modal-header modal-header-navbar">
-            <b>Report a problem</b> </div>
+            <b>Report a problem!</b> </div>
             <div className="modal-body">
             
           </div>
