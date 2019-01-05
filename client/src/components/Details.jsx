@@ -87,7 +87,7 @@ class Details extends React.Component {
               <div className="stars">This sale has been saved by {detail.stars} users.</div>
               <div className="problem">See a problem with this listing? Report it <span className="blue_text">here</span>
                 <ProblemModal show={this.state.showProblem} handleClose={this.hideProblemModal} />
-                <button type="button" onclick={this.showProblemModal}>.</button>
+                <button type="button" onClick={this.showProblemModal}>.</button>
               </div>
               <div className="realtor">Listing by {detail.realty}, Limited Liability Broker, 660 Madison Ave, New York NY 10065.</div>
               <div className="realtor_box">
