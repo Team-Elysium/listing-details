@@ -9,7 +9,7 @@ const app = express();
 // process.env.PORT |
 app.use(compression());
 app.use(bodyParser.json());
-app.use('/:id', express.static(path.join(__dirname + '../client/dist')));
+app.use('/:id', express.static(path.join(__dirname + '/../client/dist')));
 
 app.use('/', router);
 
