@@ -11,7 +11,7 @@
 
 .app {
   height: 100%;
-  width: 34%;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,8 @@
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.6;
-
+  -webkit-font-smoothing: antialiased !important;
+  -webkit-text-size-adjust: 100%;
 }
 
 .btn {
